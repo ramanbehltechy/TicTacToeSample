@@ -13,7 +13,7 @@ function Winner() {
     } else if (currentTurn == 'XWIN') {
         msg = <h1 className="display-5">Player 1 (X) won the match</h1>
     } else if (currentTurn == 'Draw') {
-        msg = <h1 className="display-5">Draw. No one won.</h1>
+        msg = <h1 className="display-5">Match has been drown.</h1>
     }
 
     const XTotalWin = (localStorage.XTotalWin == undefined || localStorage.XTotalWin == null) ? 0 : localStorage.XTotalWin;
