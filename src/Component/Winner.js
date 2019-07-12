@@ -2,7 +2,6 @@ import React from 'react';
 
 
 function Winner() {
-
     const currentTurn = localStorage.currentTurn;
     let msg = '';
     if (currentTurn == 'X') {
@@ -21,7 +20,6 @@ function Winner() {
     const OTotalWin = (localStorage.OTotalWin == undefined || localStorage.OTotalWin == null) ? 0 : localStorage.OTotalWin;
 
     function btnHomePageClick() {
-
         localStorage.removeItem('currentTurn');
         localStorage.removeItem('XTotalWin');
         localStorage.removeItem('OTotalWin');
@@ -29,24 +27,16 @@ function Winner() {
     }
 
     return (
-
         <div className="container">
-
             <div className="jumbotron">
-
                 {msg}
-
-                {/* <h1 class="display-4">Player 1 has been disqualified and player 2 won the game</h1> */}
                 <hr />
                 <p>Player 1(X) Total Win - {XTotalWin}</p>
                 <p>Player 2(O) Total Win - {OTotalWin}</p>
 
                 <p className="lead">
                     <a href="/game" className="btn btn-success" role="button">Play Again</a> &nbsp;&nbsp;
-
                     <button className="btn btn-primary" onClick={btnHomePageClick}>Exit</button>
-
-                    {/* <a href="#" class="btn btn-primary btn-lg" ngClick={() => this.btnHomePageClick()} role="button">Home Page</a> */}
                 </p>
             </div>
         </div>

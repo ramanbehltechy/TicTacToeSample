@@ -7,17 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
 function App() {
-
-    // localStorage.removeItem('currentTurn');
-    // localStorage.removeItem('OTotalWin');
-    // localStorage.removeItem('XTotalWin');
-
-    // localStorage.currentTurn = null;
-    // localStorage.OTotalWin = null;
-    // localStorage.XTotalWin = null;
-
     return (
-
         <Router>
 
             <div className="App">                
@@ -30,7 +20,6 @@ function App() {
             </div>
 
         </Router>
-
     )
 }
 

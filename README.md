@@ -4,7 +4,9 @@
 
 Usage:
 
-`yarn`
+'npm install'
+
+`npm install yarn`
 
 `npm start`
 
