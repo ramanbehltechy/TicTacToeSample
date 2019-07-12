@@ -195,7 +195,7 @@ class Game extends React.Component {
             window.location.href = '/winner';
 
         } else {
-            status = `Next player: ${this.state.xIsNext ? 'X' : 'O'}`;
+            status = `Next turn: ${this.state.xIsNext ? 'X' : 'O'}`;
         }
 
         return (
